@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Register
 {
 
-    private File file;
+    Datafile data = new Datafile();
 
 
     public boolean newUser(String username, String password)
@@ -22,7 +22,7 @@ public class Register
 
         BufferedWriter bw = null;
         try {
-            bw = new BufferedWriter(new FileWriter(this.file, true));
+            bw = new BufferedWriter(new FileWriter(String.valueOf(data), true));
 
             bw.write(username + ";"+ password); //gegebender username und das passwort werden in textfile gespeichert
             bw.newLine(); //es wird alles in eine eigene zeile gespeichert

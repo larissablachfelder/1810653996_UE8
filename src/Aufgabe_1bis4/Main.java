@@ -8,20 +8,22 @@ public class Main
     {
         //Textdatei erstellen
         Datafile userdata = new Datafile();
+        Login login = new Login();
+        Register register = new Register();
 
         //Fragen ob man schon mitglied ist
         int eingabe = JOptionPane.showConfirmDialog(null, "Bist du schon Mitglied?", "User", JOptionPane.YES_NO_OPTION);
 
         if(eingabe==0) //ja einloggen
         {
-            Login.login();
+            login.login();
 
 
         }
         if(eingabe==1)
         {
 
-            Register.register();
+            register.register();
         }
     }
 }

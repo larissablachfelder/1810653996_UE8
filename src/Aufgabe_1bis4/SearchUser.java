@@ -7,11 +7,11 @@ import java.io.IOException;
 
 public class SearchUser
 {
-    private File file;
+    Datafile data = new Datafile();
 
     public  String searchUser(String user) {
         try {
-            BufferedReader br = new BufferedReader(new FileReader(this.file));
+            BufferedReader br = new BufferedReader(new FileReader(String.valueOf(data)));
             String line;
             while((line = br.readLine()) != null) {
                 String[] parts = line.split(";");

@@ -9,16 +9,19 @@ public class Login
 {
     private File file;
 
+
     public void login()
     {
+        SearchUser su = new SearchUser();
+        Secret secret = new Secret();
 
 
         String user = JOptionPane.showInputDialog("Wie lautet dein Benutzername?");
         String pw = JOptionPane.showInputDialog("Wie lautet dein Passwort?");
 
-        if (SearchUser.searchUser(user) != null)
+        if (su.searchUser(user) != null)
         {
-            Secret.secret();
+            secret.secret();
         }
 
 

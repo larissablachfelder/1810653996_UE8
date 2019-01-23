@@ -24,10 +24,11 @@ public class SearchNumber
             while (true) {
 
                 String line = br.readLine();
-                if (line == null) break;
+                if (line == null) break; //solange lesen bis in der zeile nichts drinsteht
 
-                if (Integer.parseInt(line) == number){
-                    list.add(Integer.parseInt(line));
+                if (Integer.parseInt(line) == number) //wenn die gesuchte zahl in der line ist einmal zur liste hinzufügen
+                {
+                    list.add(Integer.parseInt(line));//zu liste hinzufügen
                 }
 
             }
@@ -36,7 +37,7 @@ public class SearchNumber
             ex.printStackTrace();
         }
 
-        return list.size();
+        return list.size(); //die länge der liste also die anzahl wie oft die zahl enthalten ist wir zurückgegeben
 
     }
 

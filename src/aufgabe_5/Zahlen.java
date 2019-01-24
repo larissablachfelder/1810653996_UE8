@@ -17,7 +17,7 @@ public class Zahlen
         int eingabe = Integer.parseInt(JOptionPane.showInputDialog("Bitte Zahl zwischen eins und 50 einegebn."));
         int anzahl = SearchNumber.searchNumber(eingabe);
 
-        JOptionPane.showMessageDialog(null, "Die Zahle " + eingabe + " ist " + anzahl + " mal zu finden.");
+            JOptionPane.showMessageDialog(null, "Die Zahle " + eingabe + " ist " + anzahl + " mal zu finden.");
 
     }
 
